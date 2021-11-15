@@ -8,7 +8,7 @@ from app_filter_sys_thread import Win_MAfilter
 # from test_window import Win_Test
 from app_excel_check import Win_excelCheck
 
-
+# 啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
 class Win_Main:
     def __init__(self):
         # 读界面
