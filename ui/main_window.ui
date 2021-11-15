@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1007</width>
+    <height>763</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>量化分析系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon/mainwindow.ico</normaloff>icon/mainwindow.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>9</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QTreeWidget" name="opTree">
+        <property name="headerHidden">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string notr="true">1</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_info">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QMdiArea" name="mdiArea"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1007</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="actionVersion"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>分析</string>
+    </property>
+    <widget class="QMenu" name="menuStock">
+     <property name="title">
+      <string>股票</string>
+     </property>
+     <addaction name="actionFilterAlertSys"/>
+    </widget>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>期货</string>
+     </property>
+     <addaction name="actionFilterAlertSys"/>
+    </widget>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>通用</string>
+     </property>
+     <addaction name="actionFilterAlertSys"/>
+    </widget>
+    <addaction name="menuStock"/>
+    <addaction name="menu_4"/>
+    <addaction name="menu_5"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPopUp"/>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionVersion">
+   <property name="text">
+    <string>版本信息</string>
+   </property>
+   <property name="toolTip">
+    <string>版本信息</string>
+   </property>
+  </action>
+  <action name="actionFilterAlertSys">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/filter.ico</normaloff>icon/filter.ico</iconset>
+   </property>
+   <property name="text">
+    <string>筛选预警系统</string>
+   </property>
+   <property name="toolTip">
+    <string>筛选预警系统</string>
+   </property>
+  </action>
+  <action name="actionPopUp">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/PopUpWindow.png</normaloff>icon/PopUpWindow.png</iconset>
+   </property>
+   <property name="text">
+    <string>独立窗口</string>
+   </property>
+   <property name="toolTip">
+    <string>独立窗口</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
